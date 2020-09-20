@@ -1,6 +1,6 @@
 $(function () {
 	// Mobile suport resposive voice
-	responsiveVoice.enableWindowClickHook();
+	$(window).click(() => responsiveVoice.enableWindowClickHook());
 
 	// Language functionality
 	const language = {
