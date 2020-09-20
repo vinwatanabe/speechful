@@ -1,7 +1,4 @@
 $(function () {
-	// browser activate speech synthesis
-	window.speechSynthesis;
-
 	// Language functionality
 	const language = {
 		spanish: 'Spanish Female',
