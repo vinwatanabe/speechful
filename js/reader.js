@@ -1,7 +1,4 @@
 $(function () {
-	// Mobile suport resposive voice
-	$(window).click(() => responsiveVoice.enableWindowClickHook());
-
 	// Language functionality
 	const language = {
 		spanish: 'Spanish Female',
@@ -65,6 +62,7 @@ $(function () {
 	}
 
 	function play(text) {
+		responsiveVoice.enableWindowClickHook();
 		responsiveVoice.speak(text, selectedLang, {
 			rate: 1,
 		});
