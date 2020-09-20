@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<title>Text to speech</title>
+	</head>
+	<body>
+		<div class="navbar navbar-light bg-primary text-center">
+			<p class="logo">Speechful</p>
+		</div>
+
+		<div class="container">
+			<div class="language mt-4">
+				<button class="btn btn-secondary" id="btnSpanish" type="button">
+					<span class="fas fa-globe-americas"></span>Español
+				</button>
+				<button class="btn btn-secondary" id="btnPortuguese" type="button">
+					<span class="fas fa-globe-americas"></span>Português
+				</button>
+				<button class="btn btn-secondary" id="btnEnglish" type="button">
+					<span class="fas fa-globe-americas"></span>English
+				</button>
+			</div>
+
+			<form class="mt-4">
+				<div class="form-group">
+					<textarea
+						class="form-control"
+						name="text_input"
+						id="text_input"
+						cols="30"
+						rows="10"
+						autofocus
+					></textarea>
+				</div>
+
+				<button class="btn btn-success play" type="submit">
+					<span class="fas fa-play"></span>Play
+				</button>
+
+				<button class="btn btn-secondary pause" type="button">
+					<span class="fas fa-pause"></span>Pause
+				</button>
+
+				<button class="btn btn-warning restart" type="button">
+					<span class="fas fa-redo"></span>Restart
+				</button>
+
+				<button class="btn btn-danger clean" type="reset">
+					<span class="fas fa-trash-alt"></span>Refresh
+				</button>
+			</form>
+		</div>
+
+		<!-- Javascript -->
+		<script
+			src="https://kit.fontawesome.com/da9724c3d6.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+		<script src="./js/reader.js"></script>
+	</body>
+</html>
