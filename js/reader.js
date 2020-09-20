@@ -1,4 +1,7 @@
 $(function () {
+	// Mobile suport resposive voice
+	responsiveVoice.clickEvent();
+
 	// Language functionality
 	const language = {
 		spanish: 'Spanish Female',
